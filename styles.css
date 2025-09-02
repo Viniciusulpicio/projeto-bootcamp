@@ -514,20 +514,6 @@
         color: var(--muted);
     }
 
-    .track::after {
-        content: "";
-        position: absolute;
-        inset: -1px;
-        border-radius: 18px;
-        border: 1px solid transparent;
-        background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 55%, transparent), color-mix(in srgb, var(--primary) 45%, transparent)) border-box;
-        -webkit-mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
-        -webkit-mask-composite: xor;
-        mask-composite: exclude;
-        opacity: .25;
-        pointer-events: none;
-    }
-
     @media (max-width: 900px) {
         .track-grid {
             grid-template-columns: repeat(2, 1fr);
@@ -611,3 +597,42 @@
                   filter: invert(100%);
 
     }
+
+
+/* ====== CONTAINER ====== */
+.swiper {
+  overflow: visible; /* sem scroll */
+  position: relative;
+}
+
+/* ====== WRAPPER ====== */
+.swiper-wrapper {
+  display: grid;
+  grid-template-columns: 1fr; /* padrão: 1 card por linha */
+  gap: 16px;
+}
+
+/* ====== RESPONSIVIDADE ====== */
+@media (min-width: 700px) {
+  .swiper-wrapper {
+    grid-template-columns: repeat(2, 1fr); /* 2 lado a lado */
+  }
+}
+
+@media (min-width: 1024px) {
+  .swiper-wrapper {
+    grid-template-columns: repeat(3, 1fr); /* 3 lado a lado */
+  }
+}
+
+/* ====== CARD ====== */
+.swiper-slide {
+  width: 100%; /* ocupa todo espaço da coluna */
+}
+
+.winner-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
+}
