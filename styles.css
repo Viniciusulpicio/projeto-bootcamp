@@ -559,7 +559,7 @@ footer {
     gap: 16px;
 }
 
-[data-theme="dark"] .logos {
+[data-theme="dark"] .logos, .dowload {
     filter: invert(100%);
 
 }
