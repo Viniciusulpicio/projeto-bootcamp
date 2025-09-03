@@ -3,7 +3,7 @@ const htmlEl = document.documentElement;
 
 // Caminhos das imagens
 const lightImg = './img/modo-claro.png';
-const darkImg  = './img/modo-escuro.png';
+const darkImg = './img/modo-escuro.png';
 
 // Recupera tema salvo
 const savedTheme = localStorage.getItem('theme');
@@ -19,3 +19,16 @@ toggleBtn.addEventListener('click', () => {
   toggleBtn.src = next === 'light' ? darkImg : lightImg;
 });
 
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+  item.addEventListener('click', () => {
+    // fecha os outros
+    faqItems.forEach(el => {
+      if (el !== item) el.classList.remove('active');
+    });
+
+    // abre/fecha o clicado
+    item.classList.toggle('active');
+  });
+});
