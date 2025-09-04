@@ -79,7 +79,81 @@ html {
     scrollbar-color: var(--primary) var(--bg-soft);
 }
 
-/* ====== NAVBAR ====== */
+/* ====== NAVBAR BASE ====== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: var(--background);
+  position: relative;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 40px;
+}
+
+/* Menu desktop */
+.menu {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+/* Esconde hambúrguer no desktop */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  z-index: 1002;
+}
+
+.menu-toggle .line {
+  width: 28px;
+  height: 3px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* ====== MOBILE ====== */
+@media (max-width: 768px){
+  /* Navbar fica logo na esquerda e ícones na direita */
+  .navbar {
+    justify-content: space-between;
+  }
+
+  /* Mostra hambúrguer no mobile */
+  .menu-toggle { display: flex; width: 40px; }
+
+  /* Esconde menu por padrão */
+  .menu {
+    display: none !important;
+    position: absolute;
+    top: 60px; right: 16px;
+    width: clamp(220px, 60vw, 280px);
+    flex-direction: column;
+    gap: 12px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 16px 40px rgba(0,0,0,.25);
+    z-index: 1001;
+  }
+
+  /* Abre menu quando ativo */
+  .menu.show { display: flex !important; }
+}
+
+.nav-flex{
+    display: flex;
+    gap: 25px;
+}
 
 .dowload{
     width: 15px;
@@ -99,7 +173,7 @@ html {
 .nav .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 14px 20px;
+    padding: 14px 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -300,6 +374,24 @@ section {
     font-size: clamp(24px, 4vw, 36px);
     margin: 0 0 10px;
 }
+
+.alerta {
+  display: none;
+  margin-top: 16px;
+  padding: 14px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #22d3ee, #0B74FC);
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 
 #section-title {
     color: white;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br" data-theme="light">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,8 +10,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-<link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+
 </head>
+
 <body>
   <!-- ====== NAV ====== -->
   <nav class="nav">
@@ -26,7 +30,15 @@
         <a href="#faq">FAQ</a>
         <a href="#localizacao">Localização</a>
       </div>
-      <button id="modeToggle" class="mode-toggle" aria-label="Alternar tema" title="Alternar tema"><img src="./img/modo-escuro.png" alt=""></button>
+
+      <div class="nav-flex">
+      <button id="menuToggle" class="menu-toggle" aria-label="Abrir menu"><img src="./img/icon/sandwich.png" alt="menu" class="menu-toggle"></button>
+
+      <button id="modeToggle" class="mode-toggle" aria-label="Alternar tema" title="Alternar tema"><img
+          src="./img/modo-escuro.png" alt=""></button>
+
+        </div>
+
     </div>
   </nav>
 
@@ -35,9 +47,11 @@
     <div class="wrap container">
       <div>
         <h1>
-          <img src="./img/banner_bootcamp.jpg" alt="Banner Bootcamp" style="max-width:100%;height:auto;border-radius:18px;">
+          <img src="./img/banner_bootcamp.jpg" alt="Banner Bootcamp"
+            style="max-width:100%;height:auto;border-radius:18px;">
         </h1>
-        <p>Transforme sua ideia em projeto. Participe do Bootcamp Unimar 2026 e viva a experiência completa: times, mentoria, apresentação final e premiação.</p>
+        <p>Transforme sua ideia em projeto. Participe do Bootcamp Unimar 2026 e viva a experiência completa: times,
+          mentoria, apresentação final e premiação.</p>
         <a class="cta" href="#inscricao">Inscreva-se já</a>
         <span class="subcta">Encerramento das inscrições em <strong id="countdown">--:--:--:--</strong></span>
 
@@ -49,9 +63,18 @@
         </div>
 
         <div class="stats">
-          <div class="stat"><h3 id="stat-inscritos">152</h3><div class="muted">inscritos (simulado)</div></div>
-          <div class="stat"><h3>5</h3><div class="muted">etapas</div></div>
-          <div class="stat"><h3>9</h3><div class="muted">pessoas premiadas</div></div>
+          <div class="stat">
+            <h3 id="stat-inscritos">152</h3>
+            <div class="muted">inscritos (simulado)</div>
+          </div>
+          <div class="stat">
+            <h3>5</h3>
+            <div class="muted">etapas</div>
+          </div>
+          <div class="stat">
+            <h3>9</h3>
+            <div class="muted">pessoas premiadas</div>
+          </div>
         </div>
       </div>
     </div>
@@ -61,39 +84,40 @@
 
 
   <!-- ====== COMO FUNCIONA ====== -->
-    <section id="como-funciona">
+  <section id="como-funciona">
     <div class="container">
-        <h2 class="section-title">Como funciona</h2>
-        <p class="section-sub">Uma jornada prática em 5 etapas.</p>
+      <h2 class="section-title">Como funciona</h2>
+      <p class="section-sub">Uma jornada prática em 5 etapas.</p>
 
-        <div class="timeline">
+      <div class="timeline">
         <div class="step">
-            <h4>1) Inscrição</h4>
-            <p>Realize sua inscrição online pelo site oficial da UNIMAR dentro do prazo.</p>
-        </div>
-        <div class="step">
-            <h4>2) Participação</h4>
-            <p>Participe das aulas, oficinas e mentorias presenciais durante o período de imersão.</p>
+          <h4>1) Inscrição</h4>
+          <p>Realize sua inscrição online pelo site oficial da UNIMAR dentro do prazo.</p>
         </div>
         <div class="step">
-            <h4>3) Desenvolvimento</h4>
-            <p>Desenvolva um projeto prático para solucionar problemas reais da sociedade ou da universidade.</p>
+          <h4>2) Participação</h4>
+          <p>Participe das aulas, oficinas e mentorias presenciais durante o período de imersão.</p>
         </div>
         <div class="step">
-            <h4>4) Apresentação</h4>
-            <p>Apresente seu projeto em um video para a banca avaliadora ao final do Bootcamp.</p>
+          <h4>3) Desenvolvimento</h4>
+          <p>Desenvolva um projeto prático para solucionar problemas reais da sociedade ou da universidade.</p>
         </div>
         <div class="step">
-            <h4>5) Premiação</h4>
-            <p>Os melhores projetos recebem bolsas de estudo, prêmios e reconhecimento.</p>
+          <h4>4) Apresentação</h4>
+          <p>Apresente seu projeto em um video para a banca avaliadora ao final do Bootcamp.</p>
         </div>
+        <div class="step">
+          <h4>5) Premiação</h4>
+          <p>Os melhores projetos recebem bolsas de estudo, prêmios e reconhecimento.</p>
         </div>
+      </div>
 
-        <div class="text-center" style="margin-top: 20px;">
-        <a href="/docs/Regulamento-do-Programa-Bootcamp.pdf" class="cta" download> <img src="./img/icon/dowload.png" alt="" class="dowload">Baixar Edital</a>
-        </div>
+      <div class="text-center" style="margin-top: 20px;">
+        <a href="/docs/Regulamento-do-Programa-Bootcamp.pdf" class="cta" download> <img src="./img/icon/dowload.png"
+            alt="" class="dowload">Baixar Edital</a>
+      </div>
     </div>
-    </section>
+  </section>
 
 
 
@@ -101,7 +125,9 @@
   <section id="bootcamp-tech">
     <div class="container">
       <h2 class="section-title" id="section-title">Bootcamp Unimar Tech</h2>
-      <p class="section-sub">Voltado para as faculdades de <strong>Inteligência Artificial</strong>, <strong>ADS</strong>, <strong>Ciência da Computação</strong> e <strong>Cibersegurança</strong>.</p>
+      <p class="section-sub">Voltado para as faculdades de <strong>Inteligência Artificial</strong>,
+        <strong>ADS</strong>, <strong>Ciência da Computação</strong> e <strong>Cibersegurança</strong>.
+      </p>
 
       <div class="track-grid">
         <a href="https://oficial.unimar.br/bacharelado-em-inteligencia-artificial/">
@@ -135,7 +161,7 @@
       </div>
 
       <h3 style="margin-top:22px;" id="section-title">Premiação</h3>
-      <div class="prizes" >   
+      <div class="prizes">
         <div class="prize">
           <h4> 1º lugar</h4>
           <p>Bolsa <strong>100%</strong> + Echo (Alexa)</p>
@@ -158,99 +184,99 @@
       <h2 class="section-title">Ganhadores de Edições Anteriores</h2>
       <p class="section-sub">Conheça os projetos que brilharam.</p>
 
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <!-- Card 1 -->
-            <div class="swiper-slide">
-              <article class="winner-card">
-                <a href="..." class="glightbox" data-gallery="winners" aria-label="Abrir imagem do projeto 2022">
-                  <img src="./img/segundo-lugar-2023.png" alt="Projeto vencedor 2022" />
-                </a>
-                <div class="content">
-                  <h4>Projeto Atlas (2022)</h4>
-                  <p class="muted">Plataforma de mentorias entre alunos e ex-alunos.</p>
-                </div>
-              </article>
-            </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- Card 1 -->
+          <div class="swiper-slide">
+            <article class="winner-card">
+              <a href="..." class="glightbox" data-gallery="winners" aria-label="Abrir imagem do projeto 2022">
+                <img src="./img/segundo-lugar-2023.png" alt="Projeto vencedor 2022" />
+              </a>
+              <div class="content">
+                <h4>Projeto Atlas (2022)</h4>
+                <p class="muted">Plataforma de mentorias entre alunos e ex-alunos.</p>
+              </div>
+            </article>
+          </div>
 
-            <!-- Card 2 -->
-            <div class="swiper-slide">
-              <article class="winner-card">
-                <a href="..." class="glightbox" data-gallery="winners" aria-label="Abrir imagem do projeto 2023">
-                  <img src="./img/segundo-lugar-2023.png" alt="Projeto vencedor 2023" />
-                </a>
-                <div class="content">
-                  <h4>EcoUnimar (2023)</h4>
-                  <p class="muted">App de sustentabilidade no campus.</p>
-                </div>
-              </article>
-            </div>
+          <!-- Card 2 -->
+          <div class="swiper-slide">
+            <article class="winner-card">
+              <a href="..." class="glightbox" data-gallery="winners" aria-label="Abrir imagem do projeto 2023">
+                <img src="./img/segundo-lugar-2023.png" alt="Projeto vencedor 2023" />
+              </a>
+              <div class="content">
+                <h4>EcoUnimar (2023)</h4>
+                <p class="muted">App de sustentabilidade no campus.</p>
+              </div>
+            </article>
+          </div>
 
-            <!-- Card 3 -->
-            <div class="swiper-slide">
-              <article class="winner-card">
-                <a href="..." class="glightbox" data-gallery="winners" aria-label="Abrir imagem do projeto 2024">
-                  <img src="./img/segundo-lugar-2023.png" alt="Projeto vencedor 2024" />
-                </a>
-                <div class="content">
-                  <h4>Unimar+ Carreiras (2024)</h4>
-                  <p class="muted">Match entre alunos e vagas de estágio.</p>
-                </div>
-              </article>
-            </div>
+          <!-- Card 3 -->
+          <div class="swiper-slide">
+            <article class="winner-card">
+              <a href="..." class="glightbox" data-gallery="winners" aria-label="Abrir imagem do projeto 2024">
+                <img src="./img/segundo-lugar-2023.png" alt="Projeto vencedor 2024" />
+              </a>
+              <div class="content">
+                <h4>Unimar+ Carreiras (2024)</h4>
+                <p class="muted">Match entre alunos e vagas de estágio.</p>
+              </div>
+            </article>
           </div>
         </div>
+      </div>
 
     </div>
   </section>
 
-  
 
-<!-- ====== BENEFÍCIOS ====== -->
-<section id="beneficios">
-  <div class="container">
-    <h2 class="section-title">Por que participar?</h2>
-    <p class="section-sub">Benefícios reais para sua carreira e desenvolvimento pessoal.</p>
 
-    <div class="benefits">
-      <div class="card" >
-        <div class="icon"><img src="./img/icon/aprendizado.png" alt="aprendizado"></div>
-        <h4>Aprendizado</h4>
-        <p>Aprenda na prática com conteúdos aplicados ao mercado.</p>
-      </div>
-      <div class="card"  data-aos-delay="100">
-        <div class="icon"><img src="./img/icon/network.png" alt="network"></div>
-        <h4>Networking</h4>
-        <p>Conexão com mentores, professores e empresas.</p>
-      </div>
-      <div class="card"  data-aos-delay="200">
-        <div class="icon"><img src="./img/icon/Portfólio.png" alt="portifolio"></div>
-        <h4>Portfólio</h4>
-        <p>Construa projetos reais para destacar em entrevistas.</p>
-      </div>
-      <div class="card"  data-aos-delay="300">
-        <div class="icon"><img src="./img/icon/university.png" alt="universidade"></div>
-        <h4>Entender a faculdade</h4>
-        <p>Vivencie como funcionam as aulas e o ambiente acadêmico.</p>
-      </div>
-      <div class="card"  data-aos-delay="400">
-        <div class="icon"><img src="./img/icon/globe.png" alt="globo"></div>
-        <h4>Novas experiências</h4>
-        <p>Troque ideias e aprenda com diferentes perspectivas.</p>
-      </div>
-      <div class="card"  data-aos-delay="500">
-        <div class="icon"><img src="./img/icon/search.png" alt=""></div>
-        <h4>Conhecimento</h4>
-        <p>Amplie sua visão com conteúdos além da sala de aula.</p>
-      </div>
-      <div class="card"  data-aos-delay="600">
-        <div class="icon"><img src="./img/icon/trophy.png" alt="trofeu"></div>
-        <h4>Reconhecimento</h4>
-        <p>Ganhe visibilidade dentro da Unimar e no mercado.</p>
+  <!-- ====== BENEFÍCIOS ====== -->
+  <section id="beneficios">
+    <div class="container">
+      <h2 class="section-title">Por que participar?</h2>
+      <p class="section-sub">Benefícios reais para sua carreira e desenvolvimento pessoal.</p>
+
+      <div class="benefits">
+        <div class="card">
+          <div class="icon"><img src="./img/icon/aprendizado.png" alt="aprendizado"></div>
+          <h4>Aprendizado</h4>
+          <p>Aprenda na prática com conteúdos aplicados ao mercado.</p>
+        </div>
+        <div class="card" data-aos-delay="100">
+          <div class="icon"><img src="./img/icon/network.png" alt="network"></div>
+          <h4>Networking</h4>
+          <p>Conexão com mentores, professores e empresas.</p>
+        </div>
+        <div class="card" data-aos-delay="200">
+          <div class="icon"><img src="./img/icon/Portfólio.png" alt="portifolio"></div>
+          <h4>Portfólio</h4>
+          <p>Construa projetos reais para destacar em entrevistas.</p>
+        </div>
+        <div class="card" data-aos-delay="300">
+          <div class="icon"><img src="./img/icon/university.png" alt="universidade"></div>
+          <h4>Entender a faculdade</h4>
+          <p>Vivencie como funcionam as aulas e o ambiente acadêmico.</p>
+        </div>
+        <div class="card" data-aos-delay="400">
+          <div class="icon"><img src="./img/icon/globe.png" alt="globo"></div>
+          <h4>Novas experiências</h4>
+          <p>Troque ideias e aprenda com diferentes perspectivas.</p>
+        </div>
+        <div class="card" data-aos-delay="500">
+          <div class="icon"><img src="./img/icon/search.png" alt=""></div>
+          <h4>Conhecimento</h4>
+          <p>Amplie sua visão com conteúdos além da sala de aula.</p>
+        </div>
+        <div class="card" data-aos-delay="600">
+          <div class="icon"><img src="./img/icon/trophy.png" alt="trofeu"></div>
+          <h4>Reconhecimento</h4>
+          <p>Ganhe visibilidade dentro da Unimar e no mercado.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
@@ -260,27 +286,34 @@
     <div class="container">
       <h2 class="section-title" id="section-title">Inscreva-se</h2>
       <p class="section-sub">Preencha seus dados e faça parte do Bootcamp.</p>
+
       <form id="formInscricao" novalidate>
         <input type="text" id="nome" placeholder="Nome completo" required />
         <input type="email" id="email" placeholder="Email" required />
-        <select id="curso" required>
-          <option value="" disabled selected>Selecione seu curso</option>
-          <option>Inteligência Artificial</option>
-          <option>Análise e Desenvolvimento de Sistemas</option>
-          <option>Ciência da Computação</option>
-          <option>Cibersegurança</option>
+
+        <select id="ano" required>
+          <option value="" disabled selected>Ano da escola</option>
+          <option value="primeiro">Primeiro</option>
+          <option value="segundo">Segundo</option>
+          <option value="terceiro">Terceiro</option>
         </select>
-        <select id="area" required>
-          <option value="" disabled selected>Área de interesse</option>
-          <option>Tech</option>
-          <option>Design</option>
-          <option>Negócios</option>
+
+        <select id="ensino" required>
+          <option value="" disabled selected>Selecione seu ensino</option>
+          <option value="medio">Ensino Médio</option>
+          <option value="tecnico">Ensino Técnico</option>
         </select>
+
+        <input type="text" id="cep" placeholder="CEP (ex: 17500000)" maxlength="9" required />
+        <input type="text" id="numero" placeholder="Número da residência" required />
+
         <button type="submit">Enviar inscrição</button>
-        <div id="lottieSuccess" style="width:120px;margin-top:12px;display:none;"></div>
       </form>
+
+      <div id="alerta" class="alerta">✅ Inscrição realizada com sucesso!</div>
     </div>
   </section>
+
 
   <!-- ====== FAQ ====== -->
   <section id="faq">
@@ -289,7 +322,8 @@
       <div class="faq">
         <div class="faq-item">
           <div class="faq-q">Preciso saber programar?<span>+</span></div>
-          <div class="faq-a">Não. O Bootcamp recebe pessoas de diversas áreas. O importante é a vontade de aprender e colaborar.</div>
+          <div class="faq-a">Não. O Bootcamp recebe pessoas de diversas áreas. O importante é a vontade de aprender e
+            colaborar.</div>
         </div>
         <div class="faq-item">
           <div class="faq-q">Posso me inscrever sozinho?<span>+</span></div>
@@ -314,10 +348,8 @@
           <img src="./img/campus.webp" alt="Campus da Unimar em Marília">
         </div>
         <div class="map" role="application" aria-label="Mapa da Unimar">
-          <iframe
-            title="Mapa - Unimar Marília"
-            width="100%" height="100%" style="border:0"
-            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          <iframe title="Mapa - Unimar Marília" width="100%" height="100%" style="border:0" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
             src="https://www.google.com/maps?q=Unimar%20-%20Universidade%20de%20Mar%C3%ADlia&output=embed">
           </iframe>
         </div>
@@ -325,20 +357,24 @@
     </div>
   </section>
 
-    <div class="divider-short" role="separator" aria-orientation="horizontal"></div>
+  <div class="divider-short" role="separator" aria-orientation="horizontal"></div>
 
 
   <footer>
-    <a href="#home"><img src="./img/logo.svg" alt="img unimar"  class="brand"> </a>
-    <p>Copyriright © <a href="https://br.linkedin.com/in/vinicius-sulpicio"><span style="font-weight: bold;">Vinicius Sulpicio</span></a></p>
+    <a href="#home"><img src="./img/logo.svg" alt="img unimar" class="brand"> </a>
+    <p>Copyriright © <a href="https://br.linkedin.com/in/vinicius-sulpicio"><span style="font-weight: bold;">Vinicius
+          Sulpicio</span></a></p>
     <div class="publi">
-      <a href="https://www.facebook.com/universidadedemarilia/?locale=pt_BR" ><img src="./img/publi/facebook.png" alt="facebook" class="logos"></a>
-      <a href="https://x.com/unimar_oficial" ><img src="./img/publi/twitter.png" alt="twitter" class="logos"></a>
-      <a href="https://br.linkedin.com/school/universidade-de-mar%C3%ADlia/" ><img src="./img/publi/logotipo-do-linkedin.png" alt="linkedin" class="logos"></a>
+      <a href="https://www.facebook.com/universidadedemarilia/?locale=pt_BR"><img src="./img/publi/facebook.png"
+          alt="facebook" class="logos"></a>
+      <a href="https://x.com/unimar_oficial"><img src="./img/publi/twitter.png" alt="twitter" class="logos"></a>
+      <a href="https://br.linkedin.com/school/universidade-de-mar%C3%ADlia/"><img
+          src="./img/publi/logotipo-do-linkedin.png" alt="linkedin" class="logos"></a>
 
     </div>
   </footer>
 
   <script src="./script.js"></script>
 </body>
+
 </html>
