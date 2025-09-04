@@ -398,7 +398,6 @@ section {
 }
 
 .section-sub {
-    color: white;
     margin-bottom: 26px;
 }
 
@@ -656,6 +655,15 @@ footer {
 
 }
 
+/* Inverte a cor do menu sanduíche no modo escuro */
+[data-theme="dark"] .menu-toggle img {
+    filter: invert(1);
+}
+
+[data-theme="dark"] .banner {
+  box-shadow: 20px 20px 80px rgba(255, 255, 255, 0.1);
+}
+
 .faq-item.active .faq-a {
     display: block;
 }
@@ -791,6 +799,12 @@ footer {
     background: #005BAA;
     margin: auto;
     border-radius: 999px;
+} 
+
+@media (max-width: 500px ){
+    .divider-short{
+        width: 80%;
+    }
 }
 
 
